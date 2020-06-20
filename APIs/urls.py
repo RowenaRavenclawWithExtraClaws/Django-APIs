@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('nbastats/', include('nbastatsapi.urls')),
     path('', include('todoapi.urls'))
 ]
