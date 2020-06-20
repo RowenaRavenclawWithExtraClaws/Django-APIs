@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'nbastatsapi.apps.NbastatsapiConfig'
     'todoapi.apps.TodoapiConfig',
     'rest_framework',
     'django.contrib.admin',
