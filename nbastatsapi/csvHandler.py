@@ -8,7 +8,4 @@ def process(file):
     stats = data.to_numpy()  # actual stats
     calc = Calculations(stat_abb, stats)
     analytics = calc.calcAll()
-    return analytics
-    '''fgPercentage = int(stats[0][statAbb.index(
-        'FG')]) / int(stats[0][statAbb.index('FGA')])
-    return round(fgPercentage, 2)'''
+    return {'analytics': analytics}
